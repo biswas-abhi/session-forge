@@ -11,7 +11,7 @@ Thank you for your interest in contributing to `SessionForge`! By contributing t
 2. **Clone the Repository:** Clone the forked repository to your local machine using Git:
 
 ```bash
-git clone https://github.com/biswas-abhi/sessionforge-docs.git
+git clone https://github.com/biswas-abhi/session-forge.git
 ```
 
 3. **Create a Branch:** Create a new branch for your contribution:
