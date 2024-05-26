@@ -1,0 +1,54 @@
+{
+  "name": "session-forge/session-forge",
+  "version": "1.0.0-dev",
+  "homepage": "https://sessionforge.netlify.app/",
+  "description": "The SessionForge library is designed to provide developers with a flexible and efficient tool for managing sessions using file manipulation. With SessionForge, you can easily create, read, update, and delete session data stored in files, enabling seamless integration of session management functionality into your applications.",
+  "type": "library",
+  "license": "Apache-2.0",
+  "keywords": [
+    "sessionforge",
+    "PHP session management",
+    "File-based sessions",
+    "Session handling",
+    "Session storage",
+    "Open source PHP library",
+    "Session data management"
+  ],
+  "autoload": {
+    "psr-4": {
+      "SessionForge\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SessionForge\\Benchmarks\\": "benchmarks/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Abhishek Biswas",
+      "email": "biswas.abhishek105@gmail.com",
+      "homepage": "https://biswas-abhishek.netlify.app/"
+    }
+  ],
+  "minimum-stability": "beta",
+  "require": {
+    "php": ">=8.0"
+  },
+  "provide": {
+    "ext-libsodium": "*",
+    "ext-json": "*",
+    "ext-zlib": "*"
+  },
+  "suggest": {
+    "ext-json": "For Prase and Manipulate JSON",
+    "ext-sodium": "For Cryptography"
+  },
+  "scripts": {
+    "serve-examples": "/usr/bin/php8.0 -S localhost:8080 -t examples",
+    "benchmark": "/usr/bin/php8.0 ./vendor/bin/phpbench run benchmarks/ --report=default"
+  },
+  "require-dev": {
+    "phpbench/phpbench": "^1.2"
+  }
+}
